@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Haripriya J — Content Marketer &amp; Video Presenter</title>
+<meta name="description" content="Portfolio of Haripriya J — content writer, copywriter, social media coordinator and video presenter with 4+ years of experience.">
+<meta property="og:title" content="Haripriya J — Content Marketer & Video Presenter">
+<meta property="og:description" content="Scripts, social content, ad copy and on-camera presenting for brands and educators.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FAF8F3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23A8650F'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='36' font-weight='700' text-anchor='middle' fill='%23fff'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+
+    --bg:#FAF8F3;
+    --bg-2:#F3EFE6;
+    --card:#FFFFFF;
+    --ink:#1B1E2B;
+    --ink-dim:#5B5E6E;
+    --gold:#A8650F;
+    --gold-soft:#F6E9CF;
+    --gold-line:#E2C48D;
+    --teal:#1F7A72;
+    --teal-soft:#DDEEEB;
+    --line:#E3DED0;
+    --shadow:0 18px 40px rgba(60,48,20,0.10);
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;
+  }
+  h1,h2,h3,h4,.mono-label,.stat b{ font-family:'Space Grotesk', 'Arial Narrow', sans-serif; }
+
+  a{ color:var(--gold); transition:color 0.2s ease, opacity 0.2s ease; }
+  a:focus-visible{ outline:2px solid var(--teal); outline-offset:3px; border-radius:6px; }
+
+  /* ---------- Layout shell ---------- */
+  .wrap{ max-width:920px; margin:0 auto; padding:0 28px; position:relative; }
+
+  /* ---------- Flow spine ---------- */
+  .spine{
+    position:absolute;
+    left:28px;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:linear-gradient(to bottom, transparent, var(--line) 4%, var(--line) 96%, transparent);
+    z-index:0;
+  }
+  @media (max-width:640px){
+    .spine{ left:14px; }
+    .wrap{ padding:0 14px 0 40px; }
+  }
+
+  .node{
+    position:relative;
+    z-index:1;
+    padding:64px 0 64px 56px;
+  }
+  @media (max-width:640px){
+    .node{ padding:44px 0 44px 30px; }
+  }
+
+  .node-head{
+    position:relative;
+    display:inline-block;
+    margin:0 0 10px 0;
+  }
+  .node-head::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:-28px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--bg);
+    border:2px solid var(--gold);
+    transform:translate(-50%,-50%);
+  }
+  @media (max-width:640px){
+    .node-head::before{ left:-16px; width:11px; height:11px; }
+  }
+  .node.teal .node-head::before{ border-color:var(--teal); }
+
+  .mono-label{
+    font-size:13px;
+    letter-spacing:0.02em;
+    color:var(--gold);
+    margin:0;
+    font-weight:600;
+  }
+  .node.teal .mono-label{ color:var(--teal); }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:88px 0 56px 56px;
+    position:relative;
+    z-index:1;
+  }
+  @media (max-width:640px){ .hero{ padding:56px 0 40px 30px; } }
+
+  .hero-top{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    margin-bottom:26px;
+  }
+  .photo{
+    width:104px; height:104px;
+    border-radius:18px;
+    object-fit:cover;
+    object-position:50% 18%;
+    border:2px solid var(--card);
+    box-shadow:0 0 0 1px var(--line), 0 10px 24px rgba(60,48,20,0.14);
+    flex-shrink:0;
+    transition:transform 0.4s var(--ease);
+  }
+  .photo:hover{ transform:scale(1.04) rotate(-1deg); }
+  @media (max-width:480px){
+    .hero-top{ gap:16px; }
+    .photo{ width:80px; height:80px; border-radius:14px; }
+  }
+  .hero h1{
+    font-size:clamp(34px,6vw,52px);
+    line-height:1.05;
+    margin:0 0 8px 0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .hero .role{
+    font-size:17px;
+    line-height:1.4;
+    color:var(--gold);
+    font-weight:500;
+    margin:0;
+  }
+  .hero p.lede{
+    max-width:62ch;
+    font-size:17px;
+    line-height:1.65;
+    color:var(--ink-dim);
+    margin:22px 0 28px 0;
+  }
+  .hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+    font-size:14px;
+    color:var(--ink-dim);
+  }
+  .hero-meta a{ color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold-line); transition:border-color 0.2s ease, color 0.2s ease; }
+  .hero-meta a:hover{ border-color:var(--gold); color:var(--gold); }
+
+  /* ---------- Stats ---------- */
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:36px;
+  }
+  @media (max-width:760px){ .stats{ grid-template-columns:repeat(2,1fr); } }
+  .stat{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:16px 16px 14px 16px;
+  }
+  .stat b{
+    display:block;
+    font-size:28px;
+    line-height:1.1;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  .stat span{
+    display:block;
+    margin-top:6px;
+    font-size:12.5px;
+    line-height:1.45;
+    color:var(--ink-dim);
+  }
+
+  /* ---------- Section heads ---------- */
+  .node h2{
+    font-size:26px;
+    font-weight:600;
+    margin:0 0 6px 0;
+    color:var(--ink);
+  }
+  .node .sub{
+    font-size:14px;
+    color:var(--ink-dim);
+    margin:0 0 28px 0;
+  }
+
+  /* ---------- Experience card ---------- */
+  .card{
+    background:var(--card);
+    color:var(--ink);
+    border-radius:16px;
+    padding:30px 32px;
+    border:1px solid var(--line);
+    transition:transform 0.35s var(--ease), box-shadow 0.35s ease;
+  }
+  .card + .card{ margin-top:18px; }
+  .card:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow);
+  }
+  @media (max-width:640px){ .card{ padding:24px 20px; } }
+  .card .role-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:4px;
+  }
+  .card .role-row h3{
+    font-size:19px;
+    margin:0;
+    font-weight:600;
+  }
+  .card .role-row .dates{
+    font-size:13px;
+    color:var(--ink-dim);
+  }
+  .card .company{
+    font-size:14px;
+    color:var(--gold);
+    font-weight:600;
+    margin:0 0 18px 0;
+  }
+  .card ul{
+    margin:0; padding:0; list-style:none;
+  }
+  .card ul li{
+    position:relative;
+    padding-left:20px;
+    margin-bottom:11px;
+    font-size:15px;
+    line-height:1.6;
+    color:var(--ink);
+  }
+  .card ul li:last-child{ margin-bottom:0; }
+  .card ul li::before{
+    content:'';
+    position:absolute;
+    left:0; top:9px;
+    width:6px; height:6px;
+    border-radius:50%;
+    background:var(--teal);
+  }
+  .card ul li b{ font-weight:600; }
+
+  .outcomes{
+    margin-top:20px;
+    padding-top:18px;
+    border-top:1px dashed var(--line);
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .outcomes .pill{
+    font-size:12.5px;
+    line-height:1.4;
+    padding:6px 12px;
+    border-radius:100px;
+    background:var(--teal-soft);
+    color:#14524C;
+    font-weight:500;
+  }
+  .outcomes .pill b{ font-weight:600; }
+
+  /* ---------- Work ---------- */
+  .work-group + .work-group{ margin-top:36px; }
+  .work-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:4px 14px;
+    margin-bottom:6px;
+  }
+  .work-head h3{
+    font-size:18px;
+    margin:0;
+    font-weight:600;
+  }
+  .work-head .where{
+    font-size:13px;
+    color:var(--teal);
+    font-weight:600;
+  }
+  .work-note{
+    font-size:14px;
+    line-height:1.6;
+    color:var(--ink-dim);
+    margin:0 0 16px 0;
+    max-width:64ch;
+  }
+  .reel-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+  @media (max-width:700px){ .reel-grid{ grid-template-columns:1fr; } }
+  .reel{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-width:0;
+    padding:14px 16px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    text-decoration:none;
+    color:var(--ink);
+    transition:transform 0.3s var(--ease), border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .reel:hover{
+    transform:translateY(-3px);
+    border-color:var(--gold-line);
+    box-shadow:0 12px 26px rgba(60,48,20,0.09);
+  }
+  .reel .play{
+    width:42px; height:42px;
+    border-radius:12px;
+    background:var(--gold-soft);
+    color:var(--gold);
+    display:grid;
+    place-items:center;
+    flex-shrink:0;
+    transition:background 0.3s ease, color 0.3s ease;
+  }
+  .reel.site .play{ background:var(--teal-soft); color:var(--teal); }
+  .reel:hover .play{ background:var(--gold); color:#fff; }
+  .reel.site:hover .play{ background:var(--teal); color:#fff; }
+  .reel .play svg{ width:18px; height:18px; }
+  .reel .txt{ min-width:0; }
+  .reel .t{
+    display:block;
+    font-family:'Space Grotesk', 'Arial Narrow', sans-serif;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.3;
+    overflow-wrap:anywhere;
+  }
+  .reel .s{
+    display:block;
+    margin-top:2px;
+    font-size:12.5px;
+    color:var(--ink-dim);
+    overflow-wrap:anywhere;
+  }
+  .reel .arrow{
+    margin-left:auto;
+    font-size:16px;
+    color:var(--ink-dim);
+    transition:transform 0.3s var(--ease), color 0.3s ease;
+  }
+  .reel:hover .arrow{ transform:translate(2px,-2px); color:var(--gold); }
+  .reel.site:hover .arrow{ color:var(--teal); }
+
+  /* ---------- Skill strip (animated) ---------- */
+  .platform-strip{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+    margin:0 0 40px 0;
+  }
+  @media (max-width:820px){ .platform-strip{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:420px){ .platform-strip{ grid-template-columns:repeat(2,1fr); } }
+
+  .platform-tile{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px 10px 14px 10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+    transition:border-color 0.3s ease, transform 0.3s var(--ease), box-shadow 0.3s ease;
+  }
+  .platform-tile:hover{
+    transform:translateY(-3px);
+    border-color:var(--gold-line);
+    box-shadow:0 12px 26px rgba(60,48,20,0.09);
+  }
+  .platform-tile svg{ width:38px; height:38px; overflow:visible; }
+  .platform-tile span{
+    font-size:11.5px;
+    line-height:1.3;
+    color:var(--ink-dim);
+    font-weight:500;
+  }
+  .pf-node,.pf-bar,.pf-block,.pf-typing,.pf-rec{ transform-box:fill-box; }
+
+  @media (prefers-reduced-motion:no-preference){
+    /* Social campaigns — connected nodes pulsing in sequence */
+    .pf-node{ animation:pfPulse 2.4s ease-in-out infinite; transform-origin:center; }
+    .pf-node:nth-of-type(1){ animation-delay:0s; }
+    .pf-node:nth-of-type(2){ animation-delay:0.5s; }
+    .pf-node:nth-of-type(3){ animation-delay:1s; }
+
+    /* SEO — bars growing */
+    .pf-bar{ animation:pfGrow 1.8s ease-in-out infinite; transform-origin:bottom; }
+    .pf-bar:nth-of-type(1){ animation-delay:0s; }
+    .pf-bar:nth-of-type(2){ animation-delay:0.25s; }
+    .pf-bar:nth-of-type(3){ animation-delay:0.5s; }
+    .pf-bar:nth-of-type(4){ animation-delay:0.75s; }
+
+    /* Proofreading — scanning highlight across lines */
+    .pf-scan{ animation:pfScan 2.2s ease-in-out infinite; }
+
+    /* Storytelling — dot travelling along the story arc */
+    .pf-dot{ animation:pfTravel 2.4s linear infinite; }
+
+    /* Writing — lines being written */
+    .pf-block{ animation:pfBlock 2.4s ease-in-out infinite; transform-origin:left; }
+    .pf-block:nth-of-type(2){ animation-delay:0s; }
+    .pf-block:nth-of-type(3){ animation-delay:0.3s; }
+    .pf-block:nth-of-type(4){ animation-delay:0.6s; }
+
+    /* Presenting — recording light */
+    .pf-rec{ animation:pfPulse 1.6s ease-in-out infinite; transform-origin:center; }
+  }
+
+  @keyframes pfPulse{
+    0%,100%{ opacity:0.4; transform:scale(1); }
+    50%{ opacity:1; transform:scale(1.25); }
+  }
+  @keyframes pfGrow{
+    0%,100%{ transform:scaleY(0.35); opacity:0.6; }
+    50%{ transform:scaleY(1); opacity:1; }
+  }
+  @keyframes pfScan{
+    0%{ transform:translateY(0); opacity:0; }
+    12%{ opacity:1; }
+    88%{ opacity:1; }
+    100%{ transform:translateY(22px); opacity:0; }
+  }
+  @keyframes pfTravel{
+    0%{ offset-distance:0%; opacity:0; }
+    8%{ opacity:1; }
+    92%{ opacity:1; }
+    100%{ offset-distance:100%; opacity:0; }
+  }
+  @keyframes pfBlock{
+    0%,100%{ transform:scaleX(0.3); opacity:0.4; }
+    50%{ transform:scaleX(1); opacity:1; }
+  }
+
+  .skill-clusters{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px 16px;
+  }
+  @media (max-width:640px){ .skill-clusters{ grid-template-columns:1fr; } }
+  .cluster{
+    border-left:2px solid var(--line);
+    padding-left:16px;
+  }
+  .cluster h4{
+    font-size:12.5px;
+    letter-spacing:0.01em;
+    color:var(--teal);
+    margin:0 0 10px 0;
+    font-weight:600;
+  }
+  .cluster ul.points{
+    margin:0; padding:0; list-style:none;
+  }
+  .cluster ul.points li{
+    position:relative;
+    padding-left:16px;
+    font-size:14px;
+    line-height:1.7;
+    color:var(--ink-dim);
+    margin-bottom:6px;
+  }
+  .cluster ul.points li::before{
+    content:'';
+    position:absolute;
+    left:0; top:9px;
+    width:5px; height:5px;
+    border-radius:50%;
+    background:var(--teal);
+  }
+
+  .tools{
+    margin-top:32px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+  }
+  .tools h4{
+    font-size:12.5px;
+    letter-spacing:0.01em;
+    color:var(--teal);
+    margin:0 0 12px 0;
+    font-weight:600;
+  }
+  .tag-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tag{
+    font-size:12.5px;
+    padding:6px 12px;
+    border-radius:100px;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--ink);
+    white-space:nowrap;
+    transition:border-color 0.2s ease, color 0.2s ease;
+  }
+  .tag:hover{ border-color:var(--teal); color:var(--teal); }
+
+  /* ---------- Education ---------- */
+  .edu-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:22px;
+  }
+  @media (max-width:700px){ .edu-grid{ grid-template-columns:1fr; } }
+  .edu .card + .card{ margin-top:0; }
+  .edu h3{ font-size:17px; margin:0 0 6px 0; font-weight:600; }
+  .edu .school{ font-size:14px; line-height:1.5; color:var(--ink-dim); margin:0 0 6px 0; }
+  .edu .years{ font-size:13px; color:var(--gold); font-weight:600; }
+
+  /* ---------- Contact / footer ---------- */
+  .contact-card{
+    background:linear-gradient(135deg, var(--gold-soft), #FBF3E2 55%, var(--teal-soft));
+    color:var(--ink);
+    border:1px solid var(--gold-line);
+    border-radius:16px;
+    padding:34px 32px;
+    text-align:left;
+  }
+  @media (max-width:640px){ .contact-card{ padding:26px 20px; } }
+  .contact-card .sub{ color:#4A4D5C; margin-bottom:0; max-width:56ch; line-height:1.6; }
+  .contact-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:22px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 18px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    border:1px solid var(--ink);
+    color:var(--ink);
+    background:rgba(255,255,255,0.6);
+    transition:transform 0.2s var(--ease), background 0.2s ease, color 0.2s ease;
+  }
+  .btn:hover{
+    transform:translateY(-2px);
+    background:var(--ink);
+    color:#fff;
+  }
+  .btn.primary{
+    background:var(--ink);
+    color:#fff;
+  }
+  .btn.primary:hover{
+    background:var(--gold);
+    border-color:var(--gold);
+  }
+  footer{
+    text-align:center;
+    padding:40px 20px 60px 20px;
+    font-size:12.5px;
+    color:var(--ink-dim);
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    .hero{ animation:rise 0.7s var(--ease) both; }
+    .js .node{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .js .node.in-view{ opacity:1; transform:translateY(0); }
+  }
+  @keyframes rise{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="spine"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-top">
+      <img class="photo" src="haripriya.png" alt="Haripriya J" width="104" height="104">
+      <div>
+        <h1>Haripriya J</h1>
+        <p class="role">Content Marketer · Social Media Coordinator · Video Presenter</p>
+      </div>
+    </div>
+    <p class="lede">4+ years writing for screens — scripts, social media content, ad copy and website copy — and coordinating the shoots and campaigns that carry them. I keep a brand's voice consistent, and I'm comfortable on either side of the camera.</p>
+    <div class="hero-meta">
+      <a href="mailto:haripriyajai1997@gmail.com" target="_top">haripriyajai1997@gmail.com</a>
+      <a href="tel:+918248357405" target="_top">+91 82483 57405</a>
+      <span>English · Tamil</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>4+ yrs</b><span>in content writing, copywriting and social media</span></div>
+      <div class="stat"><b>1M+</b><span>YouTube subscribers on a channel I contributed to</span></div>
+      <div class="stat"><b>60%</b><span>growth in organic reach through better content planning</span></div>
+      <div class="stat"><b>40%</b><span>fewer revision cycles from clearer scripts and edits</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="node" id="experience">
+    <div class="node-head"><p class="mono-label">01 · Experience</p></div>
+    <h2>Where I've worked</h2>
+    <p class="sub">Three roles, from social media coordination to brand content.</p>
+
+    <div class="card">
+      <div class="role-row">
+        <h3>Content Writer</h3>
+        <span class="dates">Feb 2026 — Present</span>
+      </div>
+      <p class="company">Thulir Media</p>
+      <ul>
+        <li>Create audience-focused digital content for <b>social media, marketing campaigns and brand storytelling</b>.</li>
+        <li>Develop <b>scripts, social media content, ad copies and campaign concepts</b> for multiple brands, strengthening brand consistency and audience engagement.</li>
+        <li>Streamlined <b>content planning, proofreading and production coordination</b>, improving workflow efficiency and reducing revision cycles.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="role-row">
+        <h3>Content Developer</h3>
+        <span class="dates">Jul 2023 — Dec 2025</span>
+      </div>
+      <p class="company">English Partner</p>
+      <ul>
+        <li>Handled <b>content creation, script writing, social media coordination and quality review</b> for educational and promotional content.</li>
+        <li>Scripted educational and promotional videos for <b>YouTube and Instagram</b>.</li>
+        <li>Coordinated <b>indoor and outdoor shoots</b> and supported social media campaigns.</li>
+        <li>Created <b>posters and digital creatives</b> for marketing outreach and counselling materials.</li>
+        <li>Managed and reviewed content for <b>webinar landing pages and website updates</b>; supported blog development, content editing and basic SEO optimisation.</li>
+      </ul>
+      <div class="outcomes">
+        <span class="pill">Contributed to a channel reaching <b>1M+ YouTube subscribers</b></span>
+        <span class="pill"><b>60%</b> growth in organic reach</span>
+        <span class="pill"><b>40%</b> reduction in revision cycles</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="role-row">
+        <h3>Social Media Coordinator</h3>
+        <span class="dates">Apr 2022 — Jun 2023</span>
+      </div>
+      <p class="company">S&amp;T Group · Technocrat.com</p>
+      <ul>
+        <li>Ran <b>social media promotions, campaign coordination and content support</b>.</li>
+        <li>Planned and executed <b>Facebook ad campaigns</b> and promotional content.</li>
+        <li>Coordinated <b>guest blogs and backlink submissions</b> to support SEO initiatives.</li>
+        <li>Assisted in campaign tracking, analysis and reporting using <b>Excel</b>.</li>
+        <li>Ensured content accuracy, brand tone and posting consistency.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="node teal" id="work">
+    <div class="node-head"><p class="mono-label">02 · Selected Work</p></div>
+    <h2>Work you can watch</h2>
+    <p class="sub">Fifteen reels and three websites. Each one opens in a new tab.</p>
+
+    <div class="work-group">
+      <div class="work-head">
+        <h3>Brand content</h3>
+        <span class="where">Thulir Media</span>
+      </div>
+      <p class="work-note">Content created for client brands across sarees, jewellery, education, pipes and housing.</p>
+      <div class="reel-grid">
+        <a class="reel" href="https://www.instagram.com/reel/DZzHIHOTUX5/?stkn=MWVkZXc3eG02djFtcQ==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Ramyyam Sarees</span><span class="s">Instagram Reel · 01</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DcfdNf3A-KO/?stkn=MXNzc29uZTZlcjdqYQ==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Ramyyam Sarees</span><span class="s">Instagram Reel · 02</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DcLppQosmUr/?stkn=NnoxYWJ4ZjM1eTNv" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Klick Edu</span><span class="s">Instagram Reel</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DZCymPXj5YA/?stkn=MTB3MDF6bnZvZTU1Zg==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Medaac Edu</span><span class="s">Instagram Reel</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DbM6ArUE-j1/?stkn=MW80cWNsdmRnMGFweg==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Rithvik Pipes</span><span class="s">Instagram Reel</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DbN98fizJHD/?stkn=ajBjN3JrYW9jZWh0" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Mother India City Shelter</span><span class="s">Instagram Reel</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DaZdMX9yJ7K/?stkn=MTN2N3k5bWV6c2Rmbw==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Panchathara Jewels</span><span class="s">Instagram Reel</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-head">
+        <h3>Educational content</h3>
+        <span class="where">English Partner</span>
+      </div>
+      <p class="work-note">Reels from my time as Content Developer, scripting educational and promotional videos.</p>
+      <div class="reel-grid">
+        <a class="reel" href="https://www.instagram.com/reel/DLSJnNIJXDU/?stkn=MTJyeGN4NWc3NnYzcw==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">English Partner</span><span class="s">Instagram Reel · 01</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DK9m9tiSbfI/?stkn=MW4zOXV4eTlpcGVmeg==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">English Partner</span><span class="s">Instagram Reel · 02</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DBlinfmTr1f/?stkn=OHlqM3Z1aDBrYnNs" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">English Partner</span><span class="s">Instagram Reel · 03</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/C6fw6ahSPzv/?stkn=am00OHJ2eWdrNzNv" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">English Partner</span><span class="s">Instagram Reel · 04</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-head">
+        <h3>On camera</h3>
+        <span class="where">Video presenting</span>
+      </div>
+      <p class="work-note">Reels where I'm the one presenting.</p>
+      <div class="reel-grid">
+        <a class="reel" href="https://www.instagram.com/reel/Dc1lxiEhrIi/?stkn=MXAwZWdlYjR6ZHU5cw==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Presenting</span><span class="s">Instagram Reel · 01</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DJ6mmCVPcle/?stkn=ZDJzMmloMDAzNGw4" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Presenting</span><span class="s">Instagram Reel · 02</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DJjbMlHtKPy/?stkn=MTJ5emNsaWRra3VtaQ==" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Presenting</span><span class="s">Instagram Reel · 03</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DJRaEwBi0vh/?stkn=bHAwbDRnbHdnbjZ4" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></span>
+          <span class="txt"><span class="t">Presenting</span><span class="s">Instagram Reel · 04</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="work-head">
+        <h3>Websites</h3>
+        <span class="where">Website content</span>
+      </div>
+      <p class="work-note">Sites I've written and reviewed content for.</p>
+      <div class="reel-grid">
+        <a class="reel site" href="https://medaac.com/" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.500-4 9c-2.600-2.500-4-5.600-4-9s1.400-6.500 4-9z"/></svg></span>
+          <span class="txt"><span class="t">Medaac</span><span class="s">medaac.com</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel site" href="https://www.thulirmedia.com/" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.500-4 9c-2.600-2.500-4-5.600-4-9s1.400-6.500 4-9z"/></svg></span>
+          <span class="txt"><span class="t">Thulir Media</span><span class="s">thulirmedia.com</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="reel site" href="https://www.motherindiacityshelthers.com/" target="_blank" rel="noopener">
+          <span class="play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.500-4 9c-2.600-2.500-4-5.600-4-9s1.400-6.500 4-9z"/></svg></span>
+          <span class="txt"><span class="t">Mother India City Shelter</span><span class="s">motherindiacityshelthers.com</span></span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="node" id="skills">
+    <div class="node-head"><p class="mono-label">03 · Skills</p></div>
+    <h2>The toolkit</h2>
+    <p class="sub">Grouped by where each one shows up in a piece of content.</p>
+
+    <div class="platform-strip">
+      <div class="platform-tile" title="Content Writing &amp; Copywriting">
+        <svg viewBox="0 0 48 48" fill="none">
+          <rect x="10" y="6" width="28" height="36" rx="4" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+          <rect class="pf-block" x="15" y="14" width="18" height="4" rx="1.5" fill="var(--gold)"/>
+          <rect class="pf-block" x="15" y="22" width="18" height="4" rx="1.5" fill="var(--teal)"/>
+          <rect class="pf-block" x="15" y="30" width="11" height="4" rx="1.5" fill="var(--gold-line)"/>
+        </svg>
+        <span>Content &amp; Copywriting</span>
+      </div>
+
+      <div class="platform-tile" title="Script Writing &amp; Storytelling">
+        <svg viewBox="0 0 48 48" fill="none">
+          <path d="M6 34 C 16 34, 16 14, 24 14 C 32 14, 32 34, 42 34" stroke="var(--line)" stroke-width="1.5" fill="none"/>
+          <circle cx="6" cy="34" r="3" fill="var(--gold-line)"/>
+          <circle cx="42" cy="34" r="3" fill="var(--gold-line)"/>
+          <circle class="pf-dot" r="4" fill="var(--gold)" style="offset-path:path('M6 34 C 16 34, 16 14, 24 14 C 32 14, 32 34, 42 34');"/>
+        </svg>
+        <span>Scripts &amp; Storytelling</span>
+      </div>
+
+      <div class="platform-tile" title="Proofreading">
+        <svg viewBox="0 0 48 48" fill="none">
+          <rect x="8" y="9"  width="32" height="8" rx="2" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+          <rect x="8" y="20" width="32" height="8" rx="2" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+          <rect x="8" y="31" width="32" height="8" rx="2" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+          <rect class="pf-scan" x="8" y="9" width="32" height="8" rx="2" fill="var(--teal)" opacity="0.35"/>
+        </svg>
+        <span>Proofreading</span>
+      </div>
+
+      <div class="platform-tile" title="Social Media Content &amp; Campaigns">
+        <svg viewBox="0 0 48 48" fill="none">
+          <line x1="24" y1="10" x2="10" y2="34" stroke="var(--line)" stroke-width="1.5"/>
+          <line x1="24" y1="10" x2="38" y2="34" stroke="var(--line)" stroke-width="1.5"/>
+          <line x1="10" y1="34" x2="38" y2="34" stroke="var(--line)" stroke-width="1.5"/>
+          <circle class="pf-node" cx="24" cy="10" r="5" fill="var(--gold)"/>
+          <circle class="pf-node" cx="10" cy="34" r="5" fill="var(--teal)"/>
+          <circle class="pf-node" cx="38" cy="34" r="5" fill="var(--gold)"/>
+        </svg>
+        <span>Social Campaigns</span>
+      </div>
+
+      <div class="platform-tile" title="SEO Content">
+        <svg viewBox="0 0 48 48" fill="none">
+          <rect x="6"  y="26" width="7" height="14" rx="1.5" class="pf-bar" fill="var(--teal)"/>
+          <rect x="17" y="18" width="7" height="22" rx="1.5" class="pf-bar" fill="var(--gold)"/>
+          <rect x="28" y="10" width="7" height="30" rx="1.5" class="pf-bar" fill="var(--teal)"/>
+          <rect x="39" y="20" width="4" height="20" rx="1.5" class="pf-bar" fill="var(--gold-line)"/>
+        </svg>
+        <span>SEO Content</span>
+      </div>
+
+      <div class="platform-tile" title="Video Presenting">
+        <svg viewBox="0 0 48 48" fill="none">
+          <rect x="6" y="9" width="36" height="30" rx="6" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+          <circle cx="24" cy="21" r="5" fill="var(--teal)"/>
+          <path d="M14 39 C 14 31, 34 31, 34 39" fill="var(--teal)" opacity="0.55"/>
+          <circle class="pf-rec" cx="36" cy="15" r="2.6" fill="var(--gold)"/>
+        </svg>
+        <span>Video Presenting</span>
+      </div>
+    </div>
+
+    <div class="skill-clusters">
+      <div class="cluster">
+        <h4>Writing</h4>
+        <ul class="points">
+          <li>Content writing &amp; copywriting</li>
+          <li>Script writing &amp; storytelling</li>
+          <li>Advertising copy</li>
+          <li>Website &amp; blog content</li>
+          <li>Proofreading &amp; editing</li>
+        </ul>
+      </div>
+      <div class="cluster">
+        <h4>Social &amp; Campaigns</h4>
+        <ul class="points">
+          <li>Social media content</li>
+          <li>Campaign coordination</li>
+          <li>Facebook ad campaigns</li>
+          <li>SEO content &amp; backlink outreach</li>
+          <li>Campaign tracking &amp; reporting</li>
+        </ul>
+      </div>
+      <div class="cluster">
+        <h4>Production</h4>
+        <ul class="points">
+          <li>Video presenting</li>
+          <li>Indoor &amp; outdoor shoot coordination</li>
+          <li>Posters &amp; digital creatives</li>
+          <li>Content planning &amp; quality review</li>
+        </ul>
+      </div>
+      <div class="cluster">
+        <h4>Languages</h4>
+        <ul class="points">
+          <li>English</li>
+          <li>Tamil</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools">
+      <h4>Tools &amp; Platforms</h4>
+      <div class="tag-row">
+        <span class="tag">Canva</span><span class="tag">Microsoft Excel</span><span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Gemini</span><span class="tag">Perplexity</span><span class="tag">Writesonic</span><span class="tag">DeepSeek</span><span class="tag">Napkin AI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="node teal edu" id="education">
+    <div class="node-head"><p class="mono-label">04 · Education</p></div>
+    <h2>Background</h2>
+    <div class="edu-grid">
+      <div class="card">
+        <h3>Master of Engineering</h3>
+        <p class="school">Sri Shakthi Institute of Engineering and Technology</p>
+        <span class="years">2019 – 2021</span>
+      </div>
+      <div class="card">
+        <h3>Bachelor of Engineering, ECE</h3>
+        <p class="school">Sri Shakthi Institute of Engineering and Technology</p>
+        <span class="years">2015 – 2019</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="node" id="contact">
+    <div class="node-head"><p class="mono-label">05 · Contact</p></div>
+    <div class="contact-card">
+      <h2>Let's talk about your next story</h2>
+      <p class="sub">Open to content writing, copywriting, social media and video presenting work.</p>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:haripriyajai1997@gmail.com" target="_top">Email me</a>
+        <a class="btn" href="tel:+918248357405" target="_top">Call +91 82483 57405</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>Haripriya J · Content Marketer, Social Media Coordinator &amp; Video Presenter</footer>
+
+<script>
+  (function(){
+    var nodes = document.querySelectorAll('.node');
+    function showAll(){ nodes.forEach(function(n){ n.classList.add('in-view'); }); }
+    try{
+      document.documentElement.classList.add('js');
+      if (!('IntersectionObserver' in window)){ showAll(); return; }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting){
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+      nodes.forEach(function(n){ io.observe(n); });
+    }catch(e){ showAll(); }
+  })();
+</script>
+</body>
+</html>
